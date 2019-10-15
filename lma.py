@@ -29,7 +29,7 @@ for i in range(start,e):
 		print("[+] Check {}".format(phi))
 		tmp = solve([(p-1)*(q-1) == phi, ipmq*p + iqmp*q -1 == p*q],p,q)
 		if(check(tmp)):
-			print(check(tmp))
+			print('[+] Flag: ' + check(tmp))
 			break
 # for test:
 # k = 973605
