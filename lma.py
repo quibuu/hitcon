@@ -23,7 +23,7 @@ def check(li):
 
 for i in range(start,e):
 	print("[+] Round {}".format(i))
-	phi = str(solve([i*p*q + i*p - i*q + 1 + i==e*d],p,q)[0][0]).split(' ')[4].split(')')[0]
+	phi = str(solve([i*p*q - i*p - i*q + 1 + i==e*d],p,q)[0][0]).split(' ')[4].split(')')[0]
 	phi = int(phi) + 1
 	if (e*d -1 == i * phi):
 		print("[+] Check {}".format(phi))
